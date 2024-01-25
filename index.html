@@ -6,16 +6,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/spartan" rel="stylesheet">
     <title>Ocean NFT</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
-            <a class="logo" href="#">
-                <img src="./img/logo.svg" alt="Ocean logo">
-                <p class="logo__text">OceanNFT</p>
-            </a>
+            <ul>
+                <li> 
+                <a class="logo" href="#">
+                    <img src="./img/Vector1.svg" alt="Ocean logo">
+                </a>
+            </li>
+            <li>
+                <a href="" class="logo-second">
+                    <p class="logo-second__text">
+                        <span class="first-half">Ocean</span>
+                        <span class="second-half">NFT</span>
+                    </p>
+                </a>
+            </li>
+            </ul>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -28,11 +47,23 @@
                         <a href="#" class="menu__link">Community</a>
                     </li>
                 </ul>
+                <button class="menu__button">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+                <!-- <div class="burger-container"> -->
+                    <!-- <button class="burger-container__button" id="burger-button">
+                      <div class="line top"></div>
+                      <div class="line middle"></div>
+                      <div class="line bottom"></div>
+                    </button> -->
+                  <!-- </div> -->
             </nav>
             <ul class="user-actions">
                 <li class="user-actioms__item">
                     <a href="#" class="user-actions__link">
-                        <img src="./img/cart.svg" alt="cart">
+                        <img src="./img/cart.svg" alt="cart" width="29px" height="29px">
                     </a>
                 </li>
                 <li class="user-actioms__item">
@@ -44,5 +75,22 @@
         </div>
       </div>
     </header>
+
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">
+                        <span class="top__title-base">Discover, collect, and sell</span>
+                        <span class="space"> </span>
+                        <span class="top__title-special">Timeless</span>
+                        <span class="space"> </span>
+                        <span class="top__title-base">NFTs</span>
+                    </h1>
+                    <p class="top__text">The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs). </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

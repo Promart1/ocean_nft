@@ -8,6 +8,13 @@ html {
   box-sizing: border-box;
 }
 
+
+ body {
+    background-color: #01204C;
+    color: #fff;
+ }
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -37,12 +44,175 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1640px;
     margin: 0 auto;
     padding-left: 20px;
+    padding-right: 20px;
 }
+
+/*/////////// header ////////////////*/
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 105px;
+   
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: -76px;
+  }
+
+  .logo-second {
+    position: absolute;
+    top: 51px; 
+    left: 50px; 
+  }
+
+.first-half {
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 60%;
+}  
+
+.second-half {
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 66px;
+}  
+
+.menu__link {
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+.menu__link:hover, .menu__link:focus {
+    opacity: 100%;
+}
+
+.menu__button {
+    display: none;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .menu__button span {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+
+/* .top {
+    width: 60px; 
+  }
+  
+  .middle {
+    width: 30px; 
+  }
+  
+  .bottom {
+    width: 60px; 
+  }  */
+  
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 0 41px;   
+}
+
+/*/////////// main block ///////////////*/
+
+.top__title {
+   max-width: 847px;
+   margin-bottom: 21px;
+}
+
+.top__title-base {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 137.4%;
+}
+
+.top__title-special {
+    font-family: 'Spartan', sans-serif;
+                                                
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 137.4%;
+    background: linear-gradient(272deg, #43A5E3 46.06%, #FF56F6 81.53%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.space {
+    margin-right: 7px; 
+  }
+
+ .top__text {
+font-family: 'Rajdhani', sans-serif;
+font-size: 26px;
+font-weight: 400;
+line-height: 44px;
+max-width: 657px;
+ } 
+
+
+
+
+ @media (max-width: 1000px) {
+    .header__inner {
+        padding-bottom: 76px;
+    }
+
+    .menu__list {
+        margin-left: 70px;
+        gap: 0 40px;
+    }
+
+    .burger-container__button {
+        display: none;
+    }
+ }
+
+ @media (max-width: 860px) {
+    .menu__list {
+        display: none;
+    }
+ }
+
+ @media (max-width: 768px) {
+    
+ }
+
+ @media (max-width: 480px) {
+    
+ }
+
+ @media (max-width: 375px) {
+    
+ }
