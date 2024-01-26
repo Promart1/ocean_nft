@@ -303,6 +303,145 @@ letter-spacing: 0.221px;
   margin-bottom: 10px;
 }
 
+.top-profile {
+  position: relative;
+}
+
+.top_profile-img {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  max-width: 100%;
+  height: auto;
+}
+
+.top__profile-card {
+  display: flex;
+  width: 336px;
+  /* height: 181px; */
+  flex-shrink: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
+  border: 2.211px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(30.400127410888672px);
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 24%;
+  right: 0;
+
+}
+
+/* .top__profile-card {
+  display: flex;
+} */
+
+.top__profile-part {
+  margin-left: 23px;
+  margin-top: 28px;
+  margin-bottom: 26px;
+}
+
+.top-profile-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+font-weight: 700;
+line-height: 35px;
+}
+
+.top__profile-user {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: -4px;
+}
+
+.top__profile-user-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+font-weight: 600;
+line-height: 35px;
+}
+
+.top__profile-text {
+  margin-top: 7px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+font-weight: 600;
+line-height: 35px;
+}
+
+.top__profile-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: -6px;
+}
+
+.top__profile-price-title {
+  font-family: 'Orbitron';
+font-size: 9px;
+font-weight: 700;
+}
+
+.top__profile-price-number {
+  font-family: 'Rajdhani';
+font-size: 11px;
+font-weight: 400;
+line-height: 35px;
+}
+
+.top__profile-time-text {
+  
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+font-weight: 600;
+line-height: 35px;
+}
+
+.top__profile-time-list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 17px;
+  
+}
+
+.top__profile-time-number {
+  font-family: 'Rajdhani';
+font-size: 17px;
+font-weight: 600;
+line-height: 35px;
+}
+
+.top__profile-time-desc {
+  font-family: 'Rajdhani';
+font-size: 11px;
+font-weight: 500;
+
+}
+
+.top__profile-time-button {
+  border-radius: 2.211px;
+border: 2.211px solid #FFA6FA;
+background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+box-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
+backdrop-filter: blur(106.12408447265625px);
+padding: 7px 9px;
+display: flex;
+align-items: center;
+gap: 10px;
+font-family: 'Rajdhani';
+font-size: 17px;
+font-weight: 600;
+color: #fff;
+margin-top: 20px;
+margin-left: -4px;
+}
+
+
+
+
+
 
 @media (max-width: 1200px) {
 
@@ -311,17 +450,40 @@ letter-spacing: 0.221px;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    
   }
   
   .top__sponsors-item {
     width: calc(50% - 15px); 
     margin-right: 15px; 
     margin-bottom: 15px; 
+    text-align: center;
+  }
+
+  .top__sponsors-item img {
+   margin: 0 auto;
   }
   
   .top__sponsors-item:last-child {
     margin-right: 0; 
   }
+
+  .top__profile-card {
+    
+  bottom: -7%;
+    right: 6%;
+  }
+
+.top_profile-img {
+  
+  margin: 0 auto;
+  position: static; 
+    top: auto;
+    left: auto;
+}
+.top__profile {
+  margin-top: 58px;
+}
 
 }
 
@@ -601,6 +763,12 @@ height: 8px;
   .top__button {
     top: 280px;
 }
+
+.top__profile-card {
+    
+  bottom: -7%;
+   right: 0;
+  }
  }
  
  
@@ -612,5 +780,6 @@ height: 8px;
   .top__button {
     top: 280px;
 }
+
 
  }
