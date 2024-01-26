@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+    <div class="menu--close"></div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -37,6 +38,11 @@
             </ul>
             <nav class="menu">
                 <ul class="menu__list">
+                    <li class="menu__close">
+                        <button class="menu__close-btn">
+                            <img src="./img/cross.svg" alt="Close cross">
+                        </button>
+                    </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Market</a>
                     </li>
@@ -45,6 +51,20 @@
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Community</a>
+                    </li>
+                    <li class="mobile-nav">
+                       <ul class="mobile-actions">
+                        <li class="mobile-actions__item">
+                            <a href="#" class="user-actions__link">
+                                <img src="./img/cart.svg" alt="cart" width="29px" height="29px">
+                            </a>
+                        </li>
+                        <li class="mobile-actions__item">
+                            <a href="#" class="user-actions__link">
+                                <img src="./img/user.svg" alt="user">
+                            </a>
+                        </li>
+                       </ul>
                     </li>
                 </ul>
                 <button class="menu__button">
@@ -56,12 +76,12 @@
             </nav>
             <ul class="user-actions">
 
-                <li class="user-actioms__item">
+                <li class="user-actions__item">
                     <a href="#" class="user-actions__link">
                         <img src="./img/cart.svg" alt="cart" width="29px" height="29px">
                     </a>
                 </li>
-                <li class="user-actioms__item">
+                <li class="user-actions__item">
                     <a href="#" class="user-actions__link">
                         <img src="./img/user.svg" alt="user">
                     </a>
@@ -87,5 +107,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
