@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="28px" viewBox="0 0 34 28" version="1.1">
-<defs>
-<image id="image17" width="34" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAABmJLR0QA/wD/AP+gvaeTAAABVElEQVRIie2XMUvDQBTH/+9SFcEOggXngoubOPsBHOrWL+DHcDmzuBTXzk6624/g6uokiM4OCkUthdxzKIXkuEve5dLSIX8IIbl77/97Lwm5Iz5/3QEA7M0ZAPD2tzgD4MEkwwpEk0FSuNHfJeLhy3YIAGvNvjGnaZqSBGgBUgERah4CtYQpgNgQTQGIgPj0eWudED4g5ZoghUhIseuQguR9OkCxG1UQEqP8nIyN92XNS0khfNXykA/Hl9/90Djb0/loXMl8Y1+zn9tfMx/H5GCtWeUvghNccNcAJ0bh6Oxm2ouBEXXEJ3qkKRt6MIT7p6vuZ0yuTkwwABz0jkf7yXtUQY2A0N3HDBB9GKWKrqQptSC2WhBbLYitzQPxrS2lv3GJynJtXkfK1GRXXKI0pbV1pKoYVdhblOxBMjZUpzPSODLXWgH1FkZ15QJz0q7C3Kel/z+sCbK/gUc2LgAAAABJRU5ErkJggg=="/>
-</defs>
-<g id="surface1">
-<use xlink:href="#image17"/>
-</g>
-</svg>

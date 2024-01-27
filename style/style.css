@@ -9,11 +9,56 @@ html {
 }
 
 
+
  body {
-    background-color: #01204C;
+  background: rgb(35 12 60);
+  /* backdrop-filter: blur(92.30584716796875px); */
     color: #fff;
  }
 
+ /* body {
+  background-color: rgba(32, 8, 59, 0.75);
+  position: relative;
+  color: #fff;
+  background: url(../img/Bg.png), lightgray 50% / cover no-repeat;
+  backdrop-filter: blur(92.30584716796875px);
+
+filter: blur(25px);
+z-index: -1;
+} */
+
+/* body {
+  position: relative;
+  color: #fff;
+  background-color: rgba(32, 8, 59, 0.75);
+  backdrop-filter: blur(25px);
+  filter: blur(25px);
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/Bg.png) lightgray 50% / cover no-repeat;
+  filter: blur(92.30584716796875px);
+  z-index: -1;
+} */
+
+/* body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; 
+  filter: blur(92px); 
+  z-index: -1;
+} */
 
 a {
   text-decoration: none;
@@ -47,8 +92,8 @@ ol {
 
 img {
   display: block;
-  /* max-width: 100%;
-  height: auto; */
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -58,6 +103,11 @@ img {
     padding-right: 20px;
 }
 
+.bg-line {
+  position: absolute;
+  top: 517px;
+  left: 835px;
+}
 /*/////////// header ////////////////*/
 
 
@@ -67,20 +117,15 @@ img {
     align-items: center;
     padding-top: 42px;
     padding-bottom: 105px;
+    position: relative;
    
 }
 
-.logo {
-    position: absolute;
-    top: 0;
-    left: -76px;
-  }
+.header-logo {
+  display: flex;
+  align-items: center;
+}
 
-  .logo-second {
-    position: absolute;
-    top: 51px; 
-    left: 50px; 
-  }
 
 .first-half {
     font-family: 'Orbitron';
@@ -159,7 +204,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: -5px;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
   z-index: 1;
@@ -212,28 +257,40 @@ line-height: 44px;
 max-width: 657px;
  } 
 
-.top__button {
-  position: absolute;
-    top: 240px;
-    left: -100px;
-}
-
-.top__button-content {
-  position: absolute;
+ .top__btn-list {
+  margin-top: 43px;
   display: flex;
   align-items: center;
-  top: 385px;
-  left: 70px;
-}
+ }
 
-.top__button-text {
+ .top__btn {
+  margin-right: 38px;
+  padding: 20px 32px 19px 67px;
+  /* width: 250px;
+  height: 64px; */
+  background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  border: 2px solid #FFA6FA;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4.422px 107.23px rgba(255, 86, 246, 0.51));
+  backdrop-filter: blur(106.12408447265625px);
+  color: #ffffff; 
+  clip-path: polygon(14% 0, 100% 0, 100% 82%, 86% 100%, 0 99%, 0% 60%, 0 18%);
   font-family: 'Orbitron';
 font-size: 19px;
 font-weight: 700;
-margin-right: 5px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
-.top__button-link {
+.top__btn-icon {
+  margin-left: 11px;
+}
+
+
+.top__btn-link {
   font-family: 'Orbitron';
 font-size: 19px;
 font-weight: 700;
@@ -241,12 +298,12 @@ background: linear-gradient(90deg, #42A6E3 2.33%, #FF56F6 101.4%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-margin-left: 70px;
+
 }
 
 .top__analytics-list {
   display: flex;
-margin-top: 190px;
+margin-top: 69px;
 }
 
 .top__number {
@@ -310,7 +367,7 @@ letter-spacing: 0.221px;
 .top_profile-img {
   position: absolute;
   top: 5%;
-  left: 60%;
+  left: 65%;
   max-width: 100%;
   height: auto;
 }
@@ -328,6 +385,7 @@ letter-spacing: 0.221px;
   position: absolute;
   bottom: 24%;
   right: 0;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 21%);
 
 }
 
@@ -439,11 +497,179 @@ margin-left: -4px;
 }
 
 
+/*/////////// Top_NFT’s_section ///////////////*/
+
+.cards__header {
+  margin-top: 207px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__title {
+  font-family: 'Orbitron';
+font-size: 27px;
+font-weight: 700;
+}
+
+.cards__btn {
+  display: flex;
+  align-items: center;
+  font-family: 'Orbitron';
+font-size: 27px;
+font-weight: 700;
+color: #fff;
+}
+
+.cards__btn-icon {
+  margin-left: 17px;
+  width: 52px;
+height: 27px;
+}
+
+.cards__list {
+  margin-top: 47px;
+}
+
+.cards__list-l {
+  display: flex;
+}
+
+.cards__profile-card {
+  display: flex;
+  width: 437px;
+height: 236px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
+  border: 2.211px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(30.400127410888672px);
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.cards__profile-part {
+  margin-left: 24px;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+
+.cards-profile-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+font-weight: 700;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 23px;
+line-height: 46.08px;
+}
+
+.cards__profile-user {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: -4px;
+}
+
+.cards__profile-user-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+font-size: 20.px;
+font-weight: 600;
+line-height: 46px;
+}
+
+.cards__profile-text {
+  margin-top: 9px;
+  font-family: 'Rajdhani', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-weight: 600;
+line-height: 46px;
+}
+
+.cards__profile-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: -6px;
+}
+
+.cards__profile-price-title {
+  font-family: 'Orbitron';
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cardscardsrofile-price-number {
+  font-family: 'Rajdhani';
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.cards__profile-time-text {
+  
+  font-family: 'Rajdhani', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-weight: 600;
+line-height: 46px;
+}
+
+.cards__profile-time-list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 17px;
+  
+}
+
+.cards__profile-time-number {
+  font-family: 'Rajdhani';
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.cards__profile-time-desc {
+  font-family: 'Rajdhani';
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-weight: 500;
+  
+
+}
+
+.cards__profile-time-button {
+  border-radius: 2.211px;
+border: 2.211px solid #FFA6FA;
+background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+box-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
+backdrop-filter: blur(106.12408447265625px);
+padding: 10px 12px;
+display: flex;
+align-items: center;
+gap: 12px;
+font-family: 'Rajdhani';
+font-size: 23px;
+font-weight: 600;
+color: #fff;
+margin-top: 20px;
+margin-left: -4px;
+}
 
 
 
 
+/*/////////// Media ///////////////*/
 @media (max-width: 1200px) {
+
+.top__analytics-list {
+ display: flex;
+ justify-content: center;
+}
 
   .top__sponsors-list {
     display: flex;
@@ -509,10 +735,10 @@ margin-left: -4px;
     .menu__list {
         transform: translateY(-100%);
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         right: 0;
-        width: 480px;
+        width: 100%;
         margin: 0 auto;
         background-color: #fff;
         color: #01204C;
@@ -548,33 +774,18 @@ margin-left: -4px;
   display: none;
 }
 
-    .header__inner {
-      justify-content: end;
-    }
 
     .menu__button {
-      margin-right: 41px;
+     
       display: flex;
     }
 
-    .top__button-content {
-      top: 350px;
-    }
-    
-    .top__button {
-        top: 200px;
-    }
+   
  }
 
 
  @media (max-width: 811px) {
-  .top__button-content {
-    top: 450px;
-  }
   
-  .top__button {
-      top: 300px;
-  }
  }
 
 
@@ -596,13 +807,7 @@ font-size: 14px;
 line-height: 23.218px;
 }
 
-.top__button-content {
-  top: 245px;
-}
 
-.top__button {
-    top: 100px;
-}
 
 .top__sponsors-list {
   margin-top: 41px;
@@ -612,33 +817,23 @@ line-height: 23.218px;
 
 
  @media (max-width: 590px) {
-  .top__button-content {
-    top: 245px;
-    left: 30px;
-  }
-  
-  .top__button-content img {
-    width: 27px;
-  height: 8px;
-  }
-  
-  .top__button-text {
-    font-size: 12px;
-  }
-  
-  .top__button {
-      top: 170px;
-      left: -50px;
-  }
-  
-  .top__button img {
-    width: 233px;
-  height: 142px;
-  }
 
-  .top__button-link {
+.top__btn {
+  padding: 9px 12px 12px 28px;
+  font-size: 12px;
+font-weight: 700;
+margin-right: 18px;
+}
+
+.top__btn-icon {
+  width: 28px;
+height: 8px;
+margin-left: 3px;
+}
+
+  .top__btn-link {
     font-size: 12px;
-    margin-left: 36px;
+    
   }
 
   .top__number {
@@ -655,13 +850,10 @@ line-height: 23.218px;
     
     .top__analytics-list {
       gap: 56px;
+      margin-top: 41px;
     }
 
-    
-
-.top__analytics-list {
-  margin-top: 104px;
-}
+  
 
  }
 
@@ -681,20 +873,14 @@ line-height: 23.218px;
       padding-bottom: 56px;
     }
 
-    .logo {
-      top: -17px;
-    }
+    
 
-    .logo-second {
-      top: 35px;
-    }
-
-    .user-actions {
+    .user-actions__item {
       display: none;
     }
 
     .menu__list {
-      width: 375px;
+      /* width: 375px; */
       padding-bottom: 0;
      
     }
@@ -729,24 +915,6 @@ height: 60px;
 gap: 60px;
 }
 
-.top__button-content {
-  top: 305px;
-  left: 30px;
-}
-
-.top__button-content img {
-  width: 27px;
-height: 8px;
-}
-
-.top__button-text {
-  font-size: 12px;
-}
-
-.top__button {
-    top: 230px;
-    left: -50px;
-}
 
 .top__analytics-item::after {
   display: none;
@@ -756,13 +924,7 @@ height: 8px;
 
  
  @media (max-width: 404px) {
-  .top__button-content {
-    top: 355px;
-  }
-
-  .top__button {
-    top: 280px;
-}
+  
 
 .top__profile-card {
     
@@ -773,13 +935,7 @@ height: 8px;
  
  
  @media (max-width: 375px) and (min-width: 200px) {
-  .top__button-content {
-    top: 355px;
-  }
-
-  .top__button {
-    top: 280px;
-}
+ 
 
 
  }

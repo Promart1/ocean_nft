@@ -31,10 +31,10 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-            <ul>
+            <ul class="header-logo">
                 <li> 
                 <a class="logo" href="#">
-                    <img src="./img/Vector1.svg" alt="Ocean logo">
+                    <img src="./img/logo.svg" alt="Ocean logo">
                 </a>
             </li>
             <li>
@@ -46,6 +46,7 @@
                 </a>
             </li>
             </ul>
+        
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__close">
@@ -77,15 +78,15 @@
                        </ul>
                     </li>
                 </ul>
-                <button class="menu__button">
-                    <span class="line"></span>
-                    <span class="middle"></span>
-                    <span class="line"></span>
-                </button>
-
             </nav>
             <ul class="user-actions">
-
+<li>
+    <button class="menu__button">
+        <span class="line"></span>
+        <span class="middle"></span>
+        <span class="line"></span>
+    </button>
+</li>
                 <li class="user-actions__item">
                     <a href="#" class="user-actions__link">
                         <img src="./img/cart.svg" alt="cart" width="29px" height="29px">
@@ -102,6 +103,9 @@
     </header>
 
     <main class="main">
+
+        <!-- /*/////////// main block ///////////////*/ -->
+
         <section class="top">
             <div class="container">
                 <div class="top__inner">
@@ -113,16 +117,19 @@
                         <span class="top__title-base">NFTs</span>
                     </h1>
                     <p class="top__text">The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs). </p>
-                   <button class="top__button">
-                    <a href="#" class="top__button-link">
-                        <img src="./img/button.svg" alt="button">
-                    </a>
-                   </button>
-                   <div class="top__button-content">
-                     <p class="top__button-text">Explore</p>
-                     <img src="./img/arrow-btn.svg" alt="arrow" class="top__button-icon">
-                     <a class="top__button-link">Create NFT’s</a>
-                   </div>
+                  
+                   <ul class="top__btn-list">
+                    <li>
+                        <button class="top__btn">
+                        Explore
+                        <img src="./img/arrow-btn.svg" alt="arrow" class="top__btn-icon">
+                       </button>
+                    </li>
+                    <li>
+                        <a class="top__btn-link">Create NFT’s</a>
+                    </li>
+                   </ul>
+
                    <div class="top__analytics">
                     <ul class="top__analytics-list">
                         <li class="top__analytics-item">
@@ -201,6 +208,66 @@
                 </div>
             </div>
         </section>
+
+        <!-- /*/////////// Cards_NFT’s_section ///////////////*/ -->
+<section class="cards">
+    <div class="container">
+        <div class="cards__header">
+          <h2 class="cards__title">Top NFT’s now</h2>
+          <button class="cards__btn">
+            View all
+            <img src="./img/arrow-btn.svg" alt="arrow" class="cards__btn-icon">
+          </button>
+        </div>
+        <div class="cards__list">
+            <ul class="cards__list-l">
+                <li class="cards__item">
+                    <img src="./img/card1.png" alt="man">
+                    <div class="cards__profile-card">
+                        <div class="cards__profile-part">
+                            <h2 class="cards-profile-title">Apollo Eth #1289 NFT</h2>
+                            <div class="cards__profile-user">
+                                <img src="./img/user-img.png" alt="user" width="37px" height="37px">
+                                <p class="cards__profile-user-name">@jhonartist</p>
+                                <img src="./img/tip.svg" alt="tip" width="15px" height="17px">
+                            </div>
+                            <p class="cards__profile-text">Reserve price</p>
+                            <div class="cards__profile-price">
+                                <img src="./img/ethereum.svg" alt="logo" width="25px" height="25px">
+                                <h3 class="cards__profile-price-title">ETH 9.31</h3>
+                                <p class="cards__profile-price-number">($29,8846)</p>
+                            </div>
+                        </div>
+                        <div class="cards__profile-part">
+                            <p class="cards__profile-time-text">Auction Ends in</p>
+                            <div class="cards__profile-time">
+                                <ul class="cards__profile-time-list">
+                                    <li class="cards__profile-time-item">
+                                        <p class="cards__profile-time-number">18</p>
+                                        <p class="cards__profile-time-desc">Hours</p>
+                                    </li>
+                                    <li class="cards__profile-time-item">
+                                        <p class="cards__profile-time-number">25</p>
+                                        <p class="cards__profile-time-desc">Mins</p>
+                                    </li>
+                                    <li class="cards__profile-time-item">
+                                        <p class="cards__profile-time-number">44</p>
+                                        <p class="cards__profile-time-desc">Secs</p>
+                                    </li>
+                                </ul>
+                                <button class="cards__profile-time-button">
+                                    Place Bid
+                                <img src="./img/arrow-btn.svg" alt="arrow" width="24px" height="9px">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<img src="./img/line.svg" alt="" class="bg-line">
     </main>
     <script src="./js/main.js"></script>
 </body>
