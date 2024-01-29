@@ -670,7 +670,77 @@ margin-left: -4px;
 }
 
 
+/*/////////// Collection_section ///////////////*/
+.collection {
+  margin-top: 160px;
+}
 
+.collection__title {
+  margin-bottom: 47px;
+  margin-top: 50px;
+  font-family: 'Orbitron';
+font-size: 27px;
+font-weight: 700;
+}
+
+.collection__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.collection__list-l {
+  column-count: 2;
+  list-style: none;
+  gap: 43px;
+}
+
+.collection__item {
+  break-inside: avoid;
+  margin-bottom: 43px;
+  width: 368px;
+height: 98px;
+border: 3px solid;
+border-image: linear-gradient(to right, rgba(255, 166, 250, 0.3), rgba(60, 121, 212, 0.3));
+border-image-slice: 1;
+box-shadow: 0px 5.76px 139.681px 0px rgba(255, 86, 246, 0.51);
+backdrop-filter: blur(138.24058532714844px);
+
+color: rgba(255, 255, 255, 0.50);
+
+text-align: center;
+font-family: 'Orbitron';
+font-size: 27px;
+font-weight: 700;
+
+padding-top: 33px;
+}
+
+.collection__item:hover,
+.collection__item:focus {
+  background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+}
+
+.collection_btn-cont {
+  display: flex;
+  justify-content: end;
+}
+
+.collection__btn {
+ display: flex;
+ align-items: center;
+
+ color: #FFF;
+font-family: 'Orbitron';
+font-size: 20px;
+font-weight: 700;
+}
+
+.collection__btn img {
+  width: 52px;
+height: 15px;
+margin-left: 15px;
+}
 
 /*/////////// Media ///////////////*/
 @media (max-width: 1390px) {
@@ -757,6 +827,19 @@ margin-left: -4px;
   margin-top: 58px;
 }
 
+.collection__list-l {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.collection__block {
+
+display: block;
+}
+
+.collection__img-block img {
+  margin: 0 auto;
+}
 }
 
 @media (max-width: 1000px) {
