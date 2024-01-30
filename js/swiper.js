@@ -1,4 +1,4 @@
-const swiper = new Swiper('.cards__list-mob', {
+const swiper = new Swiper('.swiper', {
     loop: false,
 direction: 'horizontal',
         slidesPerView: 1,
@@ -6,3 +6,4 @@ direction: 'horizontal',
         spaceBetween: 25,
 
   });
+
