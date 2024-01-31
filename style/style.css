@@ -923,21 +923,141 @@ font-family: 'Roboto';
 font-size: 18px;
 font-weight: 400;
 max-width: 489px;
-margin: 0 auto;
+margin: 25px auto 59px auto;
+
 }
 
-.sellers__list {
-  margin-top: 36px;
+
+.sellers__list-l {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 34px;
 }
 
 .sellers__item {
-  width: 437px;
+  width: 31.50%;
+  box-sizing: border-box; 
+  padding: 10px; 
+  /* width: 440px; */
 height: 124px;
   border-radius: 28.572px;
 border: 2.757px solid rgba(255, 255, 255, 0.28);
-
-
+display: flex;
+ justify-content: space-between;
+  align-items: center;
+  padding: 28px 20px 26px 30px;
+  gap: 0;
 }
+
+/* .sellers__item {
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  padding: 28px 20px 26px 30px;
+} */
+
+.sel-user-img {
+  margin-right: 14px;
+}
+
+.sellers__count {
+  margin-right: 17px;
+  color: rgba(255, 255, 255, 0.80);
+font-family: 'Roboto';
+font-size: 19px;
+font-weight: 500;
+}
+
+.sellers__block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+.sellers__user-name {
+  font-family: 'Roboto';
+font-size: 19px;
+font-weight: 500;
+margin-bottom: 16px;
+}
+
+.sellers__user-numb-block {
+  display: flex;
+  align-items: center;
+}
+
+.sellers__user-number {
+  color: rgba(255, 255, 255, 0.80);
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 500;
+}
+
+.sellers__user-pers-block-t {
+  color: #0F6;
+  width: 101px;
+height: 35px;
+border: 1.131px solid rgba(0, 178, 71, 0.72);
+border-radius: 18px;
+background: rgba(0, 178, 71, 0.15);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sellers__user-pers-block-f {
+  color: #F00;
+  width: 101px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+  border-radius: 18px;
+border: 1.131px solid rgba(178, 0, 0, 0.72);
+background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.10) 100%);
+}
+
+.sellers__btn-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 62px;
+}
+
+.sellers__btn {
+  color: #FFF;
+  text-align: center;
+font-family: 'Rajdhani';
+font-size: 20px;
+font-weight: 600;
+padding: 11px 73px;
+border: 2.409px solid #FFA6FA;
+background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+box-shadow: 0px 4.817px 116.824px 0px rgba(255, 86, 246, 0.51);
+backdrop-filter: blur(115.61940002441406px);
+}
+
+
+ /*/////////// About_section ///////////////*/ 
+
+.about {
+  margin-top: 160px;
+}
+
+.about__img {
+  background-image: url('../img/bg-about.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
 
 
 
@@ -986,6 +1106,15 @@ border: 2.757px solid rgba(255, 255, 255, 0.28);
   .explore-col__title {
     margin-left: 0;
   }
+
+  .sellers__item {
+    width: 48%;
+  }
+
+  .tab-none {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -1055,6 +1184,9 @@ display: block;
 .collection__img-block img {
   margin: 0 auto;
 }
+
+
+
 }
 
 @media (max-width: 1000px) {
@@ -1315,6 +1447,86 @@ height: 112px;
 linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
 
   }
+  .sellers__list-l {
+    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  list-style: none;
+  padding: 0;
+  gap: 25px;
+  }
+
+.mob-none {
+  display: none;
+}
+
+.sellers {
+  margin-top: 109px;
+}
+
+.sellers__title {
+font-size: 19px;
+margin-right: 6px;
+}
+
+.sellers__title-special {
+font-size: 19px;
+}
+
+.sellers_text {
+font-size: 14px;
+font-weight: 400;
+max-width: 489px;
+margin: 17px auto 37px auto;
+
+}
+
+.sellers__item {
+  box-sizing: border-box; 
+  width: 316px;
+height: 90px;
+  padding: 21px 20px 15px 20px;
+  
+}
+
+.sel-user-img {
+  margin-right: 10px;
+  width: 51px;
+  height: 51px;
+}
+
+.sellers__count {
+  margin-right: 13px;
+font-size: 14px;
+}
+
+
+.sellers__user-name {
+font-size: 14px;
+margin-bottom: 11px;
+}
+
+.sellers__user-number {
+font-size: 10px;
+}
+
+.sellers__user-pers-block-t {
+width: 73px;
+height: 26px;
+font-size: 11px;
+}
+
+.sellers__user-pers-block-f {
+  width: 73px;
+height: 26px;
+font-size: 11px;
+}
+
+.sellers__btn-cont {
+  display: none;
+}
+  
  }
 
 
