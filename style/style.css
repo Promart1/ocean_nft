@@ -1057,7 +1057,7 @@ backdrop-filter: blur(115.61940002441406px);
   background-size: cover;
   background-position: center;
   height: 556px;
-  margin-bottom: 134px;
+  /* margin-bottom: 134px; */
 }
 
 .about__block {
@@ -1108,13 +1108,64 @@ display: flex;
   gap: 9px;
 }
 
+/*/////////// subscribe_section ///////////////*/ 
 
+.subscribe {
+  margin-top: 294px;
+}
 
+.subscribe__block {
+  display: flex;
+}
 
+.subscribe__content {
+  margin-left: 76px;
+}
 
+.subscribe__title {
+  font-family: 'Orbitron';
+font-size: 40px;
+font-weight: 700;
+margin-top: 31px;
+}
 
+.subscribe__text {
+  max-width: 491px;
+  margin-top: 28px;
+  margin-bottom: 52px;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
 
+.subscribe__input {
+  border-radius: 6px 0px 0px 6px;
+background: var(--Text-Gray-100, #F4F5F7);
+padding: 15px 18px;
+margin-right: 4px;
+}
 
+.subscribe__btn {
+  border-radius: 0px 6px 6px 0px;
+border: 2.409px solid #FFA6FA;
+background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+box-shadow: 0px 4.817px 116.824px 0px rgba(255, 86, 246, 0.51);
+backdrop-filter: blur(115.61940002441406px);
+font-family: 'Inter';
+font-size: 15px;
+font-weight: 500;
+color: #FFF;
+padding: 11px 33px 15px 11px;
+}
+
+.subscribe__img-desc {
+  border-radius: 4px;
+}
+
+.subscribe__img-mob {
+  display: none;
+}
 
 /*/////////// Media ///////////////*/
 @media (max-width: 1390px) {
@@ -1236,7 +1287,19 @@ display: block;
   margin: 0 auto;
 }
 
+.subscribe__img-desc {
+  display: none;
 
+}
+
+.subscribe__img-mob {
+  display: block;
+  margin-top: 110px;
+}
+
+.subscribe__content {
+  margin-left: 0;
+}
 
 }
 
@@ -1754,7 +1817,32 @@ margin-left: 3px;
       margin-top: 41px;
     }
 
-  
+    .subscribe {
+      margin-top: 108px;
+    }
+    
+    
+    .subscribe__title {
+    font-size: 26px;
+    }
+    
+    .subscribe__text {
+      max-width: 324px;
+      margin-top: 18px;
+      margin-bottom: 34px;
+      font-size: 13px;
+      line-height: 23px;
+    }
+    
+    .subscribe__input {
+    padding: 10px 12px;
+    margin-right: 3px;
+    }
+    
+    .subscribe__btn {
+    font-size: 10px;
+    padding: 10px 22px 10px 22px;
+    }
 
  }
 
