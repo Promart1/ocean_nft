@@ -287,6 +287,8 @@ justify-content: center;
 
 }
 
+
+
 .top__btn-icon {
   margin-left: 11px;
 }
@@ -1247,6 +1249,52 @@ width: 177px;
   display: none;
 }
 
+.footer__s-part {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 27px;
+margin-bottom: 35px;
+}
+
+.footer__s-part-text {
+  color:  #D9DBE1;
+font-family: 'Inter';
+font-size: 15px;
+font-weight: 400;
+}
+
+.footer__policy-list {
+ 
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footer__policy-item {
+  position: relative;
+  padding-right: 9px;
+  
+}
+
+.footer__policy-item::after {
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: #D9DBE1;
+}
+
+.footer__policy-item:last-child:after {
+  display: none;
+}
+
+.footer__policy-mob{
+  display: none;
+}
+
 /*/////////// Media ///////////////*/
 @media (max-width: 1390px) {
   .cards__container {
@@ -1639,6 +1687,7 @@ height: 112px;
   }
 
   .mob-btn {
+    /* position: relative; */
     color: #FFF;
     border: 3px solid;
     border-image: linear-gradient(to right, rgba(255, 166, 250, 0.3), rgba(60, 121, 212, 0.3));
@@ -1655,6 +1704,27 @@ height: 112px;
   clip-path: polygon(14% 0, 100% 0, 100% 82%, 86% 100%, 0 99%, 0% 60%, 0 30%);
   
   }
+
+  /* .mob-btn::before,
+.mob-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid;
+  border-image: linear-gradient(to right, rgba(255, 166, 250, 0.3), rgba(60, 121, 212, 0.3));
+  border-image-slice: 1;
+}
+
+.mob-btn::before {
+  top: 0;
+  left: 0;
+}
+
+.mob-btn::after {
+  bottom: 0;
+  right: 0;
+} */
 
   .mob-btn:hover,
   .mob-btn:focus {
@@ -1809,12 +1879,21 @@ font-size: 11px;
    }
  
 .footer__item-mob {
+  
 font-family: 'Inter';
 font-size: 20px;
 font-weight: 500;
 line-height: 31px;
-display: flex;
+}
+
+.footer__item-block {
+  display: flex;
 justify-content: space-between;
+}
+
+.footer__item-mob:hover > ul,
+.footer__item-mob:focus > ul {
+display: initial;
 }
 
 .footer__item-mob button {
@@ -1829,7 +1908,50 @@ justify-content: space-between;
   margin-bottom: 17px;
    }
 
+   .footer__colimn-list-mob {
+    display: none;
 
+
+   }
+
+   .footer__colimn-item-mob {
+    color: #D9DBE1;
+font-family: 'Inter';
+font-size: 15px;
+font-weight: 400;
+line-height: 27px;
+   }
+
+   .footer__colimn-item-mob span {
+    color: #2EC5CE;
+    font-family: 'MuseoModerno';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 9px;
+  }
+
+  .footer__s-part {
+    display: block;
+    
+  }
+
+  .footer__policy-list {
+    justify-content: center;
+    gap: 33px;
+    margin-bottom: 38px;
+  }
+
+  .footer__s-part-text {
+    text-align: center;
+  }
+
+  .footer__policy {
+    display: none;
+  }
+
+ .footer__policy-mob {
+  display: block;
+ }
 
  }
 
