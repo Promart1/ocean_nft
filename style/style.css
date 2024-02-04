@@ -485,8 +485,10 @@ text-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
   right: 6%;
   position: absolute;
   top: 3%;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
+  width: 402px;
+height: 477px;
 }
 
 .top__profile-card {
@@ -2251,12 +2253,25 @@ font-size: 10px;
 
 
  @media (max-width: 590px) {
+  .top__btn-list {
+    margin-top: 30px 
+  }
+
+.top-btn-wrap {
+  width: 133px;
+  height: 34px;
+  border-radius: 0;
+    margin-right: 22px;
+    box-shadow: 0px 2.3594470024108887px 57.21659469604492px 0px rgba(255, 86, 246, 0.51);
+
+}
 
 .top__btn {
-  padding: 9px 12px 12px 28px;
+  padding: 8px 16px 7px 29px;
   font-size: 12px;
 font-weight: 700;
-margin-right: 18px;
+margin-right: 0;
+border-radius: 0;
 }
 
 .top__btn-icon {
@@ -2274,6 +2289,7 @@ margin-left: 3px;
     font-size: 18px;
     line-height: 28px; 
     letter-spacing: 0.118px;
+    margin-bottom: 3px;
     }
     
     .top__chapter {
@@ -2283,9 +2299,30 @@ margin-left: 3px;
     }
     
     .top__analytics-list {
-      gap: 56px;
+      /* gap: 56px; */
       margin-top: 41px;
     }
+
+.binance {
+  width: 143px;
+height: 28px;
+}
+
+.ethereum {
+  width: 92px;
+height: 29px;
+margin-right: -2px;
+}
+
+.blockchain {
+  width: 170px;
+height: 34px;
+}
+
+.bitmex {
+  width: 106px;
+height: 17px;
+}
 
     .subscribe {
       margin-top: 108px;
@@ -2354,15 +2391,19 @@ margin-left: 3px;
     }
 
     .top__title {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
    }
 
    .top__title-base {
-    font-size: 42px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 160%;
 }
 
 .top__title-special {
-  font-size: 42px;
+  font-size: 35px;
+    font-weight: 700;
+    line-height: 160%;
 }
 
 .top__text {
@@ -2378,10 +2419,17 @@ margin-left: 3px;
 height: 60px;
 gap: 60px;
 }
+.top__analytics-item {
+  padding-right: 23px
+}
 
 
 .top__analytics-item::after {
   display: none;
+}
+
+.top__sponsors-item {
+  margin-bottom: 33px;
 }
 
  }
@@ -2395,11 +2443,22 @@ gap: 60px;
   bottom: -7%;
    right: 0;
   }
+
+  .header__inner {
+    padding-top: 22px;
+    padding-bottom: 60px;
  }
+
+ 
+
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+}
  
  
  @media (max-width: 375px) and (min-width: 200px) {
  
-
 
  }
