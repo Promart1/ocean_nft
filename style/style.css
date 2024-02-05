@@ -448,7 +448,7 @@ text-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
   backdrop-filter: blur(30px);
   max-width: 100%;
   position: absolute;
-  bottom: 23%;
+  bottom: 24%;
   right: 0;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 21%);
 
@@ -570,7 +570,7 @@ transition: background 0.3s ease;
 /*/////////// Top_NFT’s_section ///////////////*/
 
 .cards__header {
-  margin-top: 207px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
 }
@@ -590,6 +590,9 @@ font-weight: 700;
 color: #fff;
 margin-right: 16px;
 }
+
+.cards__btn:hover,
+.cards__btn
 
 .cards__btn-icon {
   margin-left: 17px;
@@ -811,6 +814,11 @@ font-size: 20px;
 font-weight: 700;
 }
 
+.collection__btn:hover,
+.collection__btn:focus {
+  color: #FFA6FA;
+}
+
 .collection__btn img {
   width: 52px;
 height: 15px;
@@ -843,6 +851,11 @@ font-size: 27px;
 font-weight: 700;
 color: #fff;
 margin-right: 16px;
+}
+
+.explore-col__btn:hover,
+.explore-col__btn:focus {
+  color: #FFA6FA;
 }
 
 .explore-col__btn-icon {
@@ -1161,7 +1174,7 @@ padding-left: 71px;
   font-family: 'Inter';
 font-size: 45px;
 font-weight: 800;
-margin-bottom: 18px;
+margin-bottom: 22px;
 }
 
 .about__text {
@@ -1188,6 +1201,12 @@ display: flex;
   align-items: center;
   gap: 3px;
 }
+
+.about__more:focus,
+.about__more:hover {
+  color: #FFA6FA;
+}
+
 
 /*/////////// subscribe_section ///////////////*/ 
 
@@ -1330,8 +1349,13 @@ font-weight: 400;
 line-height: 27px;
 margin-bottom: 14px;
 width: 177px;
-
 }
+
+.footer__colimn-item:hover,
+.footer__colimn-item:focus {
+  color: #FFA6FA;
+}
+
 
 .footer__list-mob {
   display: none;
@@ -1845,7 +1869,7 @@ height: 112px;
 
   .mob-btn {
     color: #FFF;
-    background-color: rgb(32 17 70); 
+    background-color: rgb(53 41 95); 
     padding: 0.25rem 0.75rem 0.25rem 0.5rem;
     width: 127px;
     height: 28px;
