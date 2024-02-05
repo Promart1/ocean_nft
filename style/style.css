@@ -592,7 +592,9 @@ margin-right: 16px;
 }
 
 .cards__btn:hover,
-.cards__btn
+.cards__btn:focus {
+  color: #FFA6FA;
+}
 
 .cards__btn-icon {
   margin-left: 17px;
