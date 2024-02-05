@@ -299,7 +299,7 @@ max-width: 657px;
   padding: 23px 33px 21px 65px;
   border-radius: 10px;
   filter: drop-shadow(0px 4.422px 107.23px rgba(255, 86, 246, 0.51));
-  backdrop-filter: blur(106.12408447265625px);
+  
   color: #ffffff; 
   clip-path: polygon(17% 0, 100% 0, 100% 82%, 89% 100%, 0 99%, 0% 60%, 0 30%);
   font-family: 'Orbitron';
@@ -324,7 +324,6 @@ transition: background 0.3s ease;
   
   border-radius: 10px;
   filter: drop-shadow(0px 4.422px 107.23px rgba(255, 86, 246, 0.51));
-  backdrop-filter: blur(106.12408447265625px);
   clip-path: polygon(17% 0, 100% 0, 100% 82%, 89% 100%, 0 99%, 0% 60%, 0 30%);
 background: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
 
@@ -421,9 +420,9 @@ text-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
   margin-bottom: 10px;
 }
 
-.top-profile {
+/* .top-profile {
   position: relative;
-}
+} */
 
 .top_profile-img {
   right: 6%;
@@ -437,21 +436,36 @@ text-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
   display: none;
 }
 
+
+.top__profile-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
 .top__profile-card {
   display: flex;
   width: 336px;
   height: 181px;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 21%);
   flex-shrink: 0;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.top__profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
   border: 2.211px solid rgba(255, 255, 255, 0.28);
   border-radius: 10px;
-  backdrop-filter: blur(30px);
-  max-width: 100%;
-  position: absolute;
-  bottom: 24%;
-  right: 0;
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 21%);
-
+  backdrop-filter: blur(30.400127410888672px);
+  z-index: -1;
 }
 
 
@@ -459,6 +473,7 @@ text-shadow: 0px 4.422px 107.23px 0px rgba(255, 86, 246, 0.51);
   margin-left: 23px;
   margin-top: 28px;
   margin-bottom: 26px;
+  z-index: 2;
 }
 
 .top__profile-part-s {
@@ -877,13 +892,14 @@ height: 27px;
 }
 
 .explore-col__card {
+  position: relative;
   width: 438px;
 height: 565px;
 background: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%),
 linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
   border: 2.88px solid;
 border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
-  backdrop-filter: blur(0px);
+  /* backdrop-filter: blur(0px); */
   
 }
 
@@ -1257,7 +1273,6 @@ width: 274px;
 border: 2.409px solid #FFA6FA;
 background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
 box-shadow: 0px 4.817px 116.824px 0px rgba(255, 86, 246, 0.51);
-backdrop-filter: blur(115.61940002441406px);
 font-family: 'Inter';
 font-size: 15px;
 font-weight: 500;
@@ -1524,10 +1539,10 @@ font-weight: 400;
     margin-right: 0; 
   }
 
-  .top__profile-card {
+  .top__profile-wrapper {
     
-  bottom: -7%;
-    right: 6%;
+  top: 90%;
+    right: 15%;
   }
 
 .top_profile-img {
@@ -1563,18 +1578,11 @@ margin-left: 0;
   margin: 0 auto;
 }
 
-.subscribe__img-desc {
-  display: none;
 
-}
-
-.subscribe__img-mob {
+.subscribe__block {
   display: block;
-  margin-top: 104px;
-  width: 326px;
-height: 380px;
+margin-left: 50px;
 }
-
 
 .subscribe__content {
   margin-left: 0;
@@ -2135,7 +2143,26 @@ line-height: 27px;
 
 
  @media (max-width: 811px) {
+  .subscribe {
+    margin-top: 206px;
+  }
+
+  .subscribe__block {
+    margin-left: 0;
+  }
+
+  .subscribe__img-desc {
+    display: none;
   
+  } 
+  
+  
+  .subscribe__img-mob {
+    display: block;
+    margin-top: 104px;
+    width: 326px;
+  height: 380px;
+  }
  }
 
 
@@ -2316,7 +2343,7 @@ position: static;
 }
 
     .subscribe {
-      margin-top: 108px;
+      margin-top: 206px;
       margin-bottom: 108px 
     }
     
@@ -2326,7 +2353,7 @@ position: static;
     
     .subscribe__title {
     font-size: 26px;
-    margin-top: 99px;
+   
     }
     
     .subscribe__text {
@@ -2474,10 +2501,15 @@ gap: 60px;
  @media (max-width: 404px) {
   
 
-.top__profile-card {
+.top__profile-wrapper {
     
-  bottom: -15%;
+  top: 96%;
    right: 0;
+  }
+
+  .top__profile-card {
+    max-width: 324px;
+height: 175px;
   }
 
   .top__profile-part {
@@ -2522,7 +2554,17 @@ line-height: 34px;
 }
  
  
- @media (max-width: 375px) and (min-width: 200px) {
+ @media (max-width: 375px) {
  
+.top__profile-wrapper {
+  top: 96%;
+  right: -10%;
+}
 
+.top__profile-card {
+  width: 315px;
+}
+.about__block {
+  right: 1px;
+}
  }
