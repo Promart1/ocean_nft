@@ -2554,7 +2554,7 @@ line-height: 34px;
 }
  
  
- @media (max-width: 375px) {
+ @media (max-width: 374px) {
  
 .top__profile-wrapper {
   top: 96%;
@@ -2566,5 +2566,25 @@ line-height: 34px;
 }
 .about__block {
   right: 1px;
+}
+
+.top__analytics-list {
+ 
+  gap: 25px;
+}
+
+.top__analytics-item {
+  padding-right: 0;
+}
+
+.top__sponsors-list {
+  display: block;
+  margin-left: 30px;
+}
+
+.subscribe__input {
+  padding: 10px 2px;
+  margin-right: 3px;
+  width: 155px;
 }
  }
